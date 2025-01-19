@@ -1,0 +1,91 @@
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the items */
+    padding: 20px;
+    max-width: 400px; /* Set a max width for the profile container */
+    margin: auto; /* Center the container in the viewport */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background */
+}
+
+/* Profile Header */
+.profile-header {
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Profile Picture */
+.profile-picture-container {
+    margin-bottom: 15px; /* Space below the profile picture */
+}
+
+.profile-picture {
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Crop the image if necessary */
+}
+
+/* Bio Text */
+.bio-text {
+    font-size: 16px; /* Adjust font size */
+    margin: 10px 0; /* Space above and below bio text */
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px; /* Smaller padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Keep the button size tight */
+    margin-top: 10px; /* Space from bio text */
+}
+
+.edit-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+/* Edit Profile Form */
+.edit-profile-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 10px; /* Space above the form */
+}
+
+/* Textarea and Input Styles */
+.edit-profile-form label {
+    margin-bottom: 10px; /* Space below labels */
+}
+
+.edit-profile-form textarea,
+.edit-profile-form input[type="text"],
+.edit-profile-form input[type="file"] {
+    padding: 8px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.save-button {
+    margin-top: 10px; /* Space above save button */
+}
+.profile-preview {
+    width: 100px; /* Adjust the width for the preview */
+    height: 100px; /* Adjust the height for the preview */
+    border-radius: 50%; /* Circular preview */
+    object-fit: cover; /* Crop the image if necessary */
+    margin-top: 10px; /* Space above the preview */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    margin-top: 10px; /* Space above error messages */
+}
+

@@ -1,0 +1,337 @@
+/* General Container Styling */
+.home-container {
+    max-width: 65%; /* Use full width */
+    margin: 0 auto;
+    padding: 20px; /* Reduced padding for a more compact feel */
+    background-color: #f7f9fc; /* Soft light gray background for subtle elegance */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Softer, more diffused shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Softer font choice */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; /* Reduced padding */
+    background-color: #5f7d85; /* Soft teal header color */
+    color: #ffffff; /* White text */
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px; /* Reduced font size */
+    letter-spacing: 0.5px;
+}
+
+.header nav a {
+    margin: 0 10px; /* Reduced spacing between links */
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-weight: 600; /* Bold links */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header nav a:hover {
+    color: #ffd700; /* Gold highlight color on hover */
+}
+
+/* Post Create Box */
+.post-create-box {
+    margin: 20px 0; 
+    padding: 15px; /* Adjusted padding */
+    border: 1px solid #d1d1d1; /* Lighter border */
+    border-radius: 12px; /* More rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.post-create-box label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: 600; /* Bold labels */
+    color: #333; /* Darker text */
+}
+
+.post-create-box select,
+.post-create-box textarea {
+    width: 100%;
+    padding: 10px; 
+    margin: 8px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    transition: border-color 0.3s;
+    font-size: 14px; /* Reduced font size for readability */
+}
+
+.post-create-box select:focus,
+.post-create-box textarea:focus {
+    border-color: #4f9c8d; /* Teal focus color */
+    outline: none;
+}
+
+.post-create-box button {
+    padding: 10px 15px; 
+    background-color: #4f9c8d; /* Primary button color */
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.post-create-box button:hover {
+    background-color: #3e7a72; /* Darker teal on hover */
+}
+
+/* Post List */
+.post-list {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.post-list li {
+    padding: 15px; /* Adjusted padding */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    border-radius: 12px; 
+    margin-bottom: 10px; /* Reduced margin */
+    background-color: #ffffff; 
+    transition: box-shadow 0.3s, transform 0.2s;
+    position: relative; 
+}
+
+.post-list li:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Post content and metadata */
+.post-content {
+    font-size: 18px; /* Reduced font size for post content */
+    font-weight: bold; 
+    margin-bottom: 6px; 
+    line-height: 1.4; 
+    color: #444; /* Darker text for better contrast */
+}
+
+.post-feeling {
+    font-size: 14px; /* Reduced font size */
+    color: #4f9c8d; /* Teal for feeling */
+    margin-top: 4px; 
+}
+
+.post-time {
+    font-size: 12px; /* Smaller font size */
+    color: #aaa; /* Lighter gray */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 15px; 
+    padding: 10px; 
+    border-top: 2px solid #ddd; 
+    background-color: #f9f9f9; /* Light gray for separation */
+}
+
+.comment-section h4 {
+    margin: 8px 0; 
+    font-size: 18px; /* Slightly smaller font size for header */
+}
+
+.comment {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 6px; 
+    padding: 8px; 
+    border-radius: 6px; 
+    background-color: #ffffff; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.comment-time {
+    font-size: 12px; /* Smaller font size */
+    color: #777; 
+    margin-left: 8px; 
+}
+
+.comment p {
+    margin: 0; 
+    padding-left: 8px; 
+}
+
+/* Comment Input */
+.comment-input {
+    display: flex; 
+    margin-top: 10px; 
+}
+
+.comment-input textarea {
+    flex: 1; 
+    padding: 8px; 
+    border-radius: 6px; 
+    border: 1px solid #ccc; 
+    margin-right: 6px; 
+    transition: border-color 0.3s; 
+}
+
+.comment-input textarea:focus {
+    border-color: #4f9c8d; /* Teal focus color */
+    outline: none; 
+}
+
+.comment-input button {
+    padding: 8px 12px; 
+    background-color: #4f9c8d; /* Primary button color */
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.comment-input button:hover {
+    background-color: #3e7a72; /* Darker teal on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: red; 
+}
+
+/* Profile button styles */
+.profile-dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+
+.profile-button {
+    background-color: #4f9c8d; /* Match other buttons */
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 8px 12px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.profile-button:hover {
+    background-color: #3e7a72; /* Darker on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute; 
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+    min-width: 160px; 
+    display: none; 
+}
+
+/* Dropdown item styles */
+.dropdown-menu a,
+.dropdown-menu button {
+    display: block; 
+    padding: 8px; /* Adjusted padding */
+    color: #333; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+
+/* Show dropdown on hover */
+.profile-dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+/* Keep dropdown visible when hovering */
+.dropdown-menu:hover {
+    display: block; 
+}
+
+/* Change background color on hover for dropdown items */
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+    background-color: #4f9c8d; 
+    color: white; 
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 40px; /* Adjusted size */
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.reaction-section {
+    margin-top: 10px;
+}
+
+.reaction-button {
+    cursor: pointer;
+    background-color: #f0f0f0; /* Background color */
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.reaction-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    width: 150px; /* Width of the dropdown */
+}
+
+.reaction-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.reaction-option:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .home-container {
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .header h1 {
+        font-size: 22px; /* Smaller header size for mobile */
+    }
+
+    .post-create-box select,
+    .post-create-box textarea {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .post-content {
+        font-size: 16px; /* Smaller post content size */
+    }
+
+    .comment-input textarea {
+        font-size: 12px; /* Smaller comment input size */
+    }
+
+    .comment-section h4 {
+        font-size: 16px; /* Smaller comment section header */
+    }
+}
